@@ -18,7 +18,8 @@ computed: {
 },
 methods: {
   handleButton: function(){
-    eventBus.$emit('film-selected', this.film)
+    console.log('film:', this.film)
+    // eventBus.$emit('film-selected', this.film)
   }
   }
 }

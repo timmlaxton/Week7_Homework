@@ -30,7 +30,8 @@ mounted(){
   .then(films => this.films = films)
 
   eventBus.$on('film-selected',(film) => {
-    this.favourites.push(film)
+    // this.favourites.push(film)
+    console.log('film', film)
   })
 },
 components: {
